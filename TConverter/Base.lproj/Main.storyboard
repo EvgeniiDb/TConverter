@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagesiPhone" translatesAutoresizingMaskIntoConstraints="NO" id="bwI-zZ-B6f">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="bwI-zZ-B6f">
+                                <rect key="frame" x="-50" y="-6" width="514" height="907"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T-Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="yfZ-tS-wOG">
                                 <rect key="frame" x="86" y="77" width="242" height="45"/>
@@ -26,13 +26,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0ºC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8P-5a-yCz">
-                                <rect key="frame" x="178" y="366" width="58" height="42"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
+                                <rect key="frame" x="173" y="349.5" width="68.5" height="58.5"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="gRI-An-Ivv">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1.5" translatesAutoresizingMaskIntoConstraints="NO" id="gRI-An-Ivv">
                                 <rect key="frame" x="62" y="433" width="290" height="31"/>
+                                <color key="backgroundColor" systemColor="placeholderTextColor"/>
+                                <color key="tintColor" systemColor="tertiarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="286" id="dS1-0e-HWx"/>
                                 </constraints>
@@ -41,8 +43,8 @@
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32ºF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdb-PH-jav">
-                                <rect key="frame" x="171" y="488" width="72" height="42"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
+                                <rect key="frame" x="161.5" y="488" width="91.5" height="58.5"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -52,16 +54,16 @@
                         <constraints>
                             <constraint firstItem="gRI-An-Ivv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1jT-gM-Njy"/>
                             <constraint firstItem="d8P-5a-yCz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6SR-gI-zey"/>
-                            <constraint firstItem="bwI-zZ-B6f" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="C3N-bj-7Nu"/>
+                            <constraint firstItem="bwI-zZ-B6f" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="39" id="C3N-bj-7Nu"/>
                             <constraint firstItem="zdb-PH-jav" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GLW-wz-se0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="bwI-zZ-B6f" secondAttribute="top" constant="44" id="Gcx-rz-kzt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="bwI-zZ-B6f" secondAttribute="top" constant="50" id="Gcx-rz-kzt"/>
                             <constraint firstItem="yfZ-tS-wOG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MKp-0b-Eic"/>
                             <constraint firstItem="zdb-PH-jav" firstAttribute="top" secondItem="gRI-An-Ivv" secondAttribute="bottom" constant="25" id="POP-Bj-T6T"/>
                             <constraint firstItem="gRI-An-Ivv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bKe-Bl-S9j"/>
                             <constraint firstItem="gRI-An-Ivv" firstAttribute="top" secondItem="d8P-5a-yCz" secondAttribute="bottom" constant="25" id="iPZ-Rm-PiT"/>
                             <constraint firstItem="yfZ-tS-wOG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="qwC-rr-ZUK"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bwI-zZ-B6f" secondAttribute="trailing" id="wgU-HZ-FpM"/>
-                            <constraint firstItem="bwI-zZ-B6f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zV4-Oi-uLJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bwI-zZ-B6f" secondAttribute="trailing" constant="-50" id="wgU-HZ-FpM"/>
+                            <constraint firstItem="bwI-zZ-B6f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-50" id="zV4-Oi-uLJ"/>
                         </constraints>
                         <variation key="heightClass=compact-widthClass=compact">
                             <mask key="subviews">
@@ -91,8 +93,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="imagesiPhone" width="92" height="137"/>
+        <image name="2" width="6000" height="4001"/>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
